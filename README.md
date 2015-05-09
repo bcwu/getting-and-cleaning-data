@@ -34,3 +34,12 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 ## Codebook
 
 [codebook.md](./codebook.md) describes the specific details of variables, values, and units in the tidy data set.
+
+
+## Links
+
+The foolowing links contain information on the R packages used in [run_analysis.R](./run_analysis.R)
+
+* [Data Processing with dplyr & tidyr](https://rpubs.com/bradleyboehmke/data_wrangling)
+* [stringr: modern, consistent string processing](http://journal.r-project.org/archive/2010-2/RJournal_2010-2_Wickham.pdf)
+* [An Introduction to reshape2](http://seananderson.ca/2013/10/19/reshape.html)

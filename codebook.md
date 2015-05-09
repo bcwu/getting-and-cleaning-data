@@ -1,9 +1,9 @@
 # Code book
 
 The data in [tidy_data.txt](./tidy_data.txt) can be read into R with the following code:
-
+```R
         read.table("tidy_data.txt", header=TRUE)
-
+```
 
 ## Overview
 
@@ -58,7 +58,7 @@ There are three important identifier variables:
 * "Gyro" in original variable names were replaced by "AngularVelocity"
 * "Mag" in original variable names were replaced by "Magnitude"
 
-Example mappings:
+#### Example mappings
 
 * original:"tBodyGyroMag.std"
 * tidy:"tBodyAngularVelocityMagnitude.StandardDeviation"
