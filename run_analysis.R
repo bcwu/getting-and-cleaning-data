@@ -99,6 +99,13 @@ names(selected_data) <- str_replace_all(names(selected_data), "Mag", "Magnitude"
 #         gather(measurements, value, -subject_id, -activity_id, -activity_name) %>%
 #         spread(measurements, value) # Error: Duplicate identifiers for rows
 
+# tidyr code with group_by and summarize from dplyr
+# tidy_data <- selected_data %>%
+#         gather(measurements, value, -subject_id, -activity_id, -activity_name) %>%
+#         group_by(subject_id, activity_id, activity_name, measurements) %>%
+#         summarize(average = mean(value)) %>%
+#         spread(measurements, average) 
+
 # reshape2 code
 tidy_data <- selected_data %>%
         melt(c("subject_id", "activity_id", "activity_name")) %>%
